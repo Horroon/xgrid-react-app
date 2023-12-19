@@ -1,0 +1,1 @@
+export { default as ClockScreen} from './clock';

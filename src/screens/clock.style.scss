@@ -1,0 +1,35 @@
+.needle-class {
+  background: lightgray;
+  position: absolute;
+}
+
+.clock-main-container {
+  width: 100%;
+  height: 100vh;
+  .clock-frame {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url("../../public/clock-dail.jpeg");
+    position: relative;
+    background-repeat: round;
+
+    .small-needle {
+      width: 16px;
+      height: 7px;
+      bottom: 58%;
+      right: 58%;
+      transform: matrix(2, 2, 0, 1, 6, 3);
+      @extend .needle-class;
+    }
+    .large-needle {
+      transform: rotate(120deg);
+      width: 69px;
+      height: 5px;
+      bottom: 61%;
+      right: 27%;
+      @extend .needle-class;
+    }
+  }
+}
